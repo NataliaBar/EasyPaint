@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="EasyPaint. Project_1 ">
+    <meta name="keywords" content="Paint, HTML, CSS, JavaScript">
+    <title>Easy paint</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <body>
+    <div id = "buttonsBlock">
+      <div id = "toolsPanel">
+        <button class = "button" id = "scribble" title = "Scribble"></button>
+        <button class = "button" id = "polyline" title = "Polyline"></button>
+        <button class = "button" id = "rect"     title = "Rectangle"></button>
+        <button class = "button" id = "ellipse"  title = "Ellipse"></button>
+        <button class = "button" id = "polygon"  title = "Polygon"></button>
+      </div>
+      <div id = "cleaningTools">
+        <button class = "button" id = "clearAll"    title = "Clear all"></button>
+        <button class = "button" id = "deleteShape" title = "Delete shape"></button>
+        <button class = "button" id = "screenshot"  title = "Save screenshot in PNG"></button>
+      </div>
+      <div class = "dropDown">
+        <button class = "dropDownButton" id = "borderStyle" title = "Border style"></button>
+          <div class = "dropdown-content" id = "borderStyleDropdown">
+            <div class = "option" id = "solid"  title = "solid"></div>
+            <div class = "option" id = "dashes" title = "dashes"></div>
+            <div class = "option" id = "dots"   title = "dots"></div>
+          </div>
+        </div>
+      <div class = "dropDown">
+        <button class = "dropDownButton" id = "borderWidth" title = "Border width"></button>
+          <div class = "dropdown-content" id = "borderWidthDropdown"></div>
+        </div>
+      <div id = "colors">
+          <input  class = "colorPicker" id = "colorPickerFill" type = "color" title = "Fill color" value = "#FFFFFF" />
+          <input  class = "colorPicker" id = "colorPickerBorder" type = "color" title= "Border color" value = "#000000" />
+      </div>
+    </div>
+    <div id = "drawingPane">
+      <canvas id = "mainCanvas"></canvas>
+    </div>
+     <!--CopyRight-->
+    <div id = "createdBy">&copy; <a href = "http://nataliabar.com/" title = "NataliaBar.com" target = "_blank">Natalia Bar</a>
+      <br/> Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver" target = "_blank">Madebyoliver</a>
+      from <a href="http://www.flaticon.com" title="Flaticon" target = "_blank">www.flaticon.com</a>
+      is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+    </div>
+
+    <script src = "scripts/jquery-1.12.4.min.js"></script>
+    
+    <script src = "scripts/shapes.js"></script>
+    <script src = "scripts/main.js"></script>
+
+  </body>
+</html>
+
+

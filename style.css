@@ -1,0 +1,252 @@
+/*Style for working space*/
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #D4D4D4;
+}
+
+a {
+  color: #333333;
+}
+
+#buttonsBlock {
+  height: 600px;
+  width: 70px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: inline-block;
+  border: 1px solid #858585;
+  -webkit-boborder-radius: 3px;
+  -moz-boborder-radius: 3px;
+  border-radius: 3px;
+  background-color: #A3A3A3;
+}
+
+#drawingPane {
+  min-height: 350px;
+  max-height: 1000px;
+  min-width: 500px;
+  max-width: 2000px;
+  position: absolute;
+  top: 20px;
+  bottom: 30px;
+  left: 100px;
+  right: 10px;
+  display: inline-block;
+  border: 1px solid #858585;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+}
+
+/*Style for all the tools*/
+
+.button, .dropDownButton {
+  width: 35px;
+  height: 35px;
+}
+
+.button {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.dropDownButton {
+  position: inherit;
+}
+
+.colorPicker {
+  position: relative;
+  top: 100px;
+  left: 10px;
+}
+
+.button, .dropDownButton, .colorPicker {
+  display: block;
+  margin: 5px;
+  border: 1px solid #7A7A7A;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px #5E5E5E;
+  -moz-box-shadow: 0px 2px #5E5E5E;
+  box-shadow: 0px 2px #5E5E5E;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.button[pressed], .button:active {
+  position: relative;
+  top: 12px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/*Icons for all the buttons*/
+
+#scribble {
+  background-image: url('icons/scribble_1_35x35.png');  
+}
+
+#scribble[pressed] {
+  background-image: url('icons/scribble_2_35x35.png');
+}
+
+#polyline {
+  background-image: url('icons/polyline_1_35x35.png');
+}
+
+#polyline[pressed] {
+  background-image: url('icons/polyline_2_35x35.png');
+}
+
+#rect {
+  background-image: url('icons/rect_1_35x35.png');
+}
+
+#rect[pressed] {
+  background-image: url('icons/rect_2_35x35.png');
+}
+
+#ellipse {
+  background-image: url('icons/ellipse_1_35x35.png');
+}
+
+#ellipse[pressed] {
+  background-image: url('icons/ellipse_2_35x35.png');
+}
+
+#polygon {
+  background-image: url('icons/polygon_1_35x35.png');
+}
+
+#polygon[pressed] {
+  background-image: url('icons/polygon_2_35x35.png');
+}
+
+#clearAll {
+  background-image: url('icons/clear_1_35x35.png');
+}
+
+#clearAll:active {
+  background-image: url('icons/clear_2_35x35.png');
+}
+
+#deleteShape {
+  background-image: url('icons/delete_1_35x35.png');
+}
+
+#deleteShape:active {
+  background-image: url('icons/delete_2_35x35.png');
+}
+
+#screenshot {
+  background-image: url('icons/save_1_35x35.png');
+}
+
+#screenshot:active {
+  background-image: url('icons/save_2_35x35.png');
+}
+
+#borderStyle {
+  background-image: url('icons/border_style_1_35x35.png');
+}
+
+#borderStyle[pressed] {
+  background-image: url('icons/border_style_2_35x35.png');
+}
+
+#borderWidth {
+  background-image: url('icons/width_1_35x35.png');
+}
+
+#borderWidth[pressed] {
+  background-image: url('icons/width_2_35x35.png');
+}
+
+/*Style for dropdown lists*/
+
+.dropDown {
+  position: relative;
+  top: 60px;
+  left: 5px;
+  margin: 5px;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 80px;
+  background-color: #FAFAFA;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.dropdown-content div:hover {
+  background-color: #E9E9E9;
+  cursor: pointer;
+}
+
+#borderStyleDropdown .option {
+  height: 20px;
+  padding-top: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#solid {
+  background-image: url('icons/solid_line_80x12.png');
+}
+
+#dashes {
+  background-image: url('icons/dashed_line_80x12.png');
+}
+
+#dots {
+  background-image: url('icons/dotted_line_80x12.png');
+}
+
+#borderWidthDropdown .option {
+  height: auto;
+  padding-left: 10px;
+  font-family: Calibri, sans-serif;
+}
+
+/*Style for color pickers*/
+
+.colorPicker {
+  width: 30px;
+  height: 30px;
+  background-image: url('icons/bg1_40x40.png');
+}
+
+.colorPicker:active {
+  background-image: url('icons/bg2_40x40.png');
+}
+
+#createdBy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  font-size: 0.8em;
+  color: #858585;
+}
+
+
+
+
